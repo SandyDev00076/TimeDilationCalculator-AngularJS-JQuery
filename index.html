@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Time Dilation Calculator</title>
+        <!-- Angular JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!-- Module -->
+        <script src="TDModule.js"></script>
+        <!-- Controller -->
+        <script src="MainController.js"></script>
+        <!-- Styles -->
+        <link rel="stylesheet" href="pageStyle.css"/>
+    </head>
+    <body ng-app="TDModule">
+        <div ng-controller="MainController" class="mainContainer">
+            <div class="mainHeading">
+                <span class="maintitle">Time Dilation Calculator</span>
+                <button class="letsstart">Lets Start <i class="fas fa-angle-double-right" style="font-size: 20px"></i></button>
+            </div>
+            <div class="userzone">
+                <span>Name of the place you wanna visit</span>
+                <input type="text" class="userdet" placeholder="Name">
+                <span style="margin-top: 15px">Total Distance to the Destination</span>
+                <span>
+                    <input type="number" class="userdet" style="width: max-content; min-width: 0px" placeholder="Distance in KMs">
+                    <select name="DistanceUnits" class="userdet" style="min-width: 0; width: max-content">
+                        <option>KILOMETRES</option>
+                        <option>MILES</option>
+                        <option>LIGHT YEARS</option>
+                        <option>ASTRONOMICAL UNITS</option>
+                    </select>
+                </span>
+                <span style="margin-top: 15px">Velocity with which you are travelling</span>
+                <span>
+                    <input type="number" class="userdet" style="width: max-content; min-width: 0px" placeholder="Speed in KM/Hour">
+                    <select name="SpeedUnits" class="userdet" style="min-width: 0; width: max-content">
+                            <option>KM/HOUR</option>
+                            <option>MILES/HOUR</option>
+                            <option>METRE/SEC</option>
+                            <option>KM/SEC</option>
+                            <option>MILES/SEC</option>
+                    </select>
+                </span>
+                <button class="usersubmit">Get The Stats</button>
+            </div>
+            <div class="userresult">
+                
+            </div>
+        </div>
+    </body>
+</html>

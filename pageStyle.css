@@ -1,0 +1,103 @@
+.mainContainer {
+    
+}
+
+.mainHeading {
+    background-color: #333;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: timewaste;
+    color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    align-content: stretch;
+    align-items: center;
+    box-shadow: 0 0 10px 0 grey;
+}
+
+.maintitle {
+    font-size: 30px;
+}
+
+.letsstart {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    box-shadow: 0 0 5px 0 whitesmoke;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: timewaste;
+    background-color: #333;
+    color: whitesmoke;
+
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+.letsstart:hover {
+    box-shadow: 0 0 15px 0 whitesmoke;
+}
+
+.userzone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding: 10px;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 0 grey;
+    margin-top: 20px;
+    font-family: timewaste;
+    padding-bottom: 20px;
+}
+
+.userdet {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    padding: 10px;
+    font-size: 15px;
+    min-width: 500px;
+    border-color: #333;
+    font-family: timewaste;
+    margin-top: 7px;
+    text-align: center;
+    color: #333;
+    box-shadow: 2px 2px 2px 0 grey;
+}
+
+.usersubmit {
+    margin-top: 20px;
+    padding: 15px;
+    font-family: timewaste;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #333;
+    font-size: 20px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 5px 0 gray;
+
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+.usersubmit:hover {
+    box-shadow: 0 0 15px 0 grey;
+}
+
+.userresult {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px grey;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: grey;
+}
+
+@font-face {
+    font-family: timewaste;
+    src: url(./fonts/pirulen.woff);
+}
