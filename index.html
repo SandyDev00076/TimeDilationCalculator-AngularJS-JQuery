@@ -25,8 +25,8 @@
                 <input type="text" class="userdet" placeholder="Name">
                 <span style="margin-top: 15px">Total Distance to the Destination</span>
                 <span>
-                    <input type="number" class="userdet" style="width: max-content; min-width: 0px" placeholder="Distance in KMs">
-                    <select name="DistanceUnits" class="userdet" style="min-width: 0; width: max-content">
+                    <input id="dist" type="number" class="userdet" style="width: max-content; min-width: 0px" placeholder="Distance">
+                    <select id="du" name="DistanceUnits" class="userdet" style="min-width: 0; width: max-content">
                         <option>KILOMETRES</option>
                         <option>MILES</option>
                         <option>LIGHT YEARS</option>
@@ -35,8 +35,8 @@
                 </span>
                 <span style="margin-top: 15px">Velocity with which you are travelling</span>
                 <span>
-                    <input type="number" class="userdet" style="width: max-content; min-width: 0px" placeholder="Speed in KM/Hour">
-                    <select name="SpeedUnits" class="userdet" style="min-width: 0; width: max-content">
+                    <input id="speed" type="number" class="userdet" style="width: max-content; min-width: 0px" placeholder="Speed">
+                    <select id="su" name="SpeedUnits" class="userdet" style="min-width: 0; width: max-content">
                             <option>KM/HOUR</option>
                             <option>MILES/HOUR</option>
                             <option>METRE/SEC</option>
@@ -47,7 +47,10 @@
                 <button class="usersubmit">Get The Stats</button>
             </div>
             <div class="userresult">
-                
+                <span>Time elapsed on Earth - {{ timeOnEarth }} hours</span>
+                <span>Time elapsed for you - {{ timeOnSpaceship }} hours</span>
+                <span>Distance for you is now {{ dilatedDistance }} kilometers</span>
+                <span>By the time you will reach home, you will be {{ ageDifference }} hours younger</span>
             </div>
         </div>
     </body>
