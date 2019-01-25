@@ -96,6 +96,13 @@
     padding: 20px;
     margin-top: 20px;
     background-color: grey;
+    font-family: timewaste;
+    color: whitesmoke;
+}
+
+.userstat {
+    color: yellowgreen;
+    font-size: 30px;
 }
 
 @font-face {
