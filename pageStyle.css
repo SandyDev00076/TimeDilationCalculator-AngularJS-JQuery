@@ -38,6 +38,25 @@
     box-shadow: 0 0 15px 0 whitesmoke;
 }
 
+.again {
+    padding: 10px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    box-shadow: 0 0 5px 0 whitesmoke;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: timewaste;
+    background-color: #333;
+    color: whitesmoke;
+
+    transition-property: box-shadow;
+    transition-duration: 0.5s;
+}
+
+.again:hover {
+    box-shadow: 0 0 15px 0 whitesmoke;
+}
+
 .userzone {
     display: flex;
     align-items: center;

@@ -19,6 +19,7 @@
             <div class="mainHeading">
                 <span class="maintitle">Time Dilation Calculator</span>
                 <button class="letsstart">Lets Start <i class="fas fa-angle-double-right" style="font-size: 20px"></i></button>
+                <button class="again">Again ?</button>
             </div>
             <div class="userzone">
                 <span>Name of the place you wanna visit</span>
@@ -47,10 +48,10 @@
                 <button class="usersubmit">Get The Stats</button>
             </div>
             <div class="userresult">
-                <span>Time elapsed on Earth - <span class="userstat">{{ timeOnEarth }}</span> hours</span>
-                <span>Time elapsed for you - <span class="userstat">{{ timeOnSpaceship }}</span> hours</span>
-                <span>Distance for you is now <span class="userstat">{{ dilatedDistance }}</span> kilometers</span>
-                <span>By the time you will reach home, you will be <span class="userstat">{{ ageDifference }}</span> hours younger</span>
+                <span>Time elapsed on Earth - <span class="userstat">{{ timeOnEarth | number: 2 }}</span> hours</span>
+                <span>Time elapsed for you - <span class="userstat">{{ timeOnSpaceship | number: 2 }}</span> hours</span>
+                <span>Distance for you is now <span class="userstat">{{ dilatedDistance | number: 2 }}</span> kilometers</span>
+                <span>By the time you will reach home, you will be <span class="userstat">{{ ageDifference | number: 2 }}</span> hours younger</span>
             </div>
         </div>
     </body>
